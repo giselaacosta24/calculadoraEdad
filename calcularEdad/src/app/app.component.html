@@ -1,11 +1,29 @@
-<label >Ingrese Edad Uno:</label>
+<div class="container">
+  <h1>
+    Calcular promedio y suma de edades
+  </h1>
 
-<input type="text" id="edad1" name="edad1" required
-       minlength="4" maxlength="8" size="10"><br>
+  <div>
+	<div class="col-12">
+    <h3>Edad Uno:</h3>
+  </div><input [(ngModel)]="number1" type="text" name="" placeholder="Ingrese Numero">
+  <div class="col-12">
+    <h3>Edad Dos:</h3>
+  </div><input [(ngModel)]="number2" type="text" name="" placeholder="Ingrese Numero">
+  </div>
+  <div >
 
-       <label >Ingrese Edad Dos:</label>
-       <input type="text" id="edad2" name="edad2" required
-              minlength="4" maxlength="8" size="10"><br>
+<br>
+    <button (click)="calc()" class="button">
+      Calcular 
+    </button>
+    <button (click)="limpiar()"  class="button">
+      Limpiar 
+    </button>
+  </div>
+      <h3>Promedio : {{result1}}</h3> 
 
-              <button name="button">Calcular</button>
-     
+    
+     <h3> Suma : {{result2}}</h3> 
+
+</div>
