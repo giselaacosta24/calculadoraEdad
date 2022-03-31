@@ -8,10 +8,10 @@ import { Location } from '@angular/common';
 })
 export class AppComponent {
   title = 'calcularEdad';
-  public number1 :any;
-  public number2 : any;
-  public result1 : any;
-  public result2 : any;
+  public number1 :number=0;
+  public number2 : number=0;
+  public result1 :number=0;
+  public result2 : number=0;
 
   constructor(private location: Location) {}
   public calc(){
